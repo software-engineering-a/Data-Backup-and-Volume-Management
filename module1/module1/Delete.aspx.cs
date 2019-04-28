@@ -51,11 +51,11 @@ namespace module1
                 asd.ExecuteCommand(SQL, out msg);
                 if (msg == "")
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('delete successfully!')", true);
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('deleted successfully!')", true);
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('some error!')", true);
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('some error occured!')", true);
                 }
             }
             else if (e.CommandName == "Email")
