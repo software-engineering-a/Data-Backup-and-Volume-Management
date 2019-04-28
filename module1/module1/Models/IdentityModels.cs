@@ -25,7 +25,7 @@ namespace module1.Models
         {
             return Task.FromResult(GenerateUserIdentity(manager));
         }
-    }
+    } 
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
