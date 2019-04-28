@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
@@ -67,6 +67,8 @@ namespace module1
             return HttpUtility.UrlDecode(request.QueryString[UserIdKey]);
         }
 
+        
+        
         public static string GetResetPasswordRedirectUrl(string code, HttpRequest request)
         {
             var absoluteUri = "/Account/ResetPassword?" + CodeKey + "=" + HttpUtility.UrlEncode(code);
